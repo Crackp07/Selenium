@@ -19,5 +19,4 @@ class TestEnterAcc():
     element = driver.find_element(By.CSS_SELECTOR, "body")
     actions = ActionChains(driver)
     actions.move_to_element(element, 0, 0).perform()
-    print("Succsess")
     driver.quit()
