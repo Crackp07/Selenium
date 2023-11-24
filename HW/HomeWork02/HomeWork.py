@@ -24,9 +24,11 @@ class TestHomeWork():
         self.driver.find_element(By.ID, "header-search").click()
         self.driver.find_element(By.ID, "header-search").send_keys("Mazda 2")
         self.driver.find_element(By.CSS_SELECTOR, ".button-search").click()
-        assert self.driver.find_element(By.CSS_SELECTOR, ".result_txt > p").text == "Results for \\\"Mazda 2\\\" , 510 Results Found."
+        assert self.driver.find_element(By.CSS_SELECTOR, ".result_txt > p").text == "Results for \"Mazda 2\" , 510 Results Found."
         assert self.driver.title == "MAZDA:Search Result"
         first_result = self.driver.find_element(By.CSS_SELECTOR, "#contents_2014 > div.result_detail_area > div:nth-child(1) > h3 > a)")
         print("First search result:", first_result.text)
 
-  
+if __name__ == "__main__":
+    pytest.main([__file__, '-s'])
+
