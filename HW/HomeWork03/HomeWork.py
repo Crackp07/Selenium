@@ -30,8 +30,8 @@ class TestQwerty():
         EC.presence_of_element_located((By.XPATH, "//span[@id=\'spnIstanbul \']")))
     self.driver.find_element(By.XPATH, "//span[@id=\'spnIstanbul \']").click()
     WebDriverWait(self.driver, 30).until(
-        EC.presence_of_element_located((By.XPATH,"//li[@id=\'fiv_2_28/11/2023\']")))
-    self.driver.find_element(By.XPATH, "//li[@id=\'fiv_2_28/11/2023\']").click()
+        EC.presence_of_element_located((By.XPATH,"//li[@id=\'fiv_4_28/12/2023\']")))
+    self.driver.find_element(By.XPATH, "//li[@id=\'fiv_4_28/12/2023\']").click()
     self.driver.find_element(By.CSS_SELECTOR, ".srchBtnSe").click()
     WebDriverWait(self.driver, 100).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, ".lis")))
