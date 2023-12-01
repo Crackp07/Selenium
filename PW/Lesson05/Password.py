@@ -19,5 +19,8 @@ driver.find_element(By.XPATH, "//*[@id='identifierId']").send_keys('byushuk@gmai
 driver.find_element(By.XPATH, "//*[@id='identifierNext']/div/button/span").click()
 WebDriverWait(driver, 30).until(
     EC.presence_of_element_located((By.XPATH, "//*[@id='password']/div[1]/div/div[1]/input")))
-driver.find_element(By.XPATH, "//*[@id='password']/div[1]/div/div[1]/input").send_keys('34527259Bog')
+driver.find_element(By.XPATH, "//*[@id='password']/div[1]/div/div[1]/input").send_keys('fdsfsadf')
+driver.find_element(By.XPATH, "//*[@id=':24']").click()
+driver.switch_to.window()
+
 # driver.close()
